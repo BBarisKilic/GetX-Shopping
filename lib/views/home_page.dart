@@ -86,6 +86,20 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {},
+        backgroundColor: Colors.amber,
+        icon: Icon(
+          Icons.add_shopping_cart_rounded,
+          color: Colors.black,
+        ),
+        label: GetX<CartController>(builder: (controller) {
+          return Text(
+            '${controller.totalItem}',
+            style: TextStyle(fontSize: 24.0, color: Colors.black),
+          );
+        }),
+      ),
     );
   }
 }

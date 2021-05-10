@@ -4,6 +4,7 @@ import 'package:getx_shopping/models/product.dart';
 class CartController extends GetxController {
   var cartItems = <Product>[].obs;
 
+  int get totalItem => cartItems.length;
   double get totalAmount =>
       cartItems.fold(0, (sum, current) => sum + current.price);
 
