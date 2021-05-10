@@ -17,22 +17,22 @@ class HomeController extends GetxController {
       Product(
         id: 0,
         price: 40.0,
-        productDescription: "some description about product ",
-        productImage: "asd",
+        productDescription: "The apple is a pome (fleshy) fruit.",
+        productImage: "non",
         productName: "Apple",
       ),
       Product(
         id: 0,
         price: 29.0,
-        productDescription: "some description about product ",
-        productImage: "asd",
+        productDescription: "The pear is a sweet, juicy fruit.",
+        productImage: "non",
         productName: "Pear",
       ),
       Product(
         id: 0,
         price: 32.0,
-        productDescription: "some description about product ",
-        productImage: "asd",
+        productDescription: "The kiwi is a fruit. It has an oval shape.",
+        productImage: "non",
         productName: "Kiwi",
       ),
     ];

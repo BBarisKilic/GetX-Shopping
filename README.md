@@ -1,16 +1,11 @@
-# getx_shopping
+# <p align="center">GetX Shopping</p>
 
-An app that uses the GetX package for state management.
+An app that uses MVC design pattern and GetX package for state management.
 
-## Getting Started
+Through this project, I've learned:
+-   Model-View-Controller design pattern
+-   GetX package and how to use it for state management.
 
-This project is a starting point for a Flutter application.
+Screenshot of the app:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center"><img src="getx_shopping.png" width="300"></p>
