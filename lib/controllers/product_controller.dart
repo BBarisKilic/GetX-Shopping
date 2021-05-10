@@ -30,7 +30,7 @@ class HomeController extends GetxController {
       ),
       Product(
         id: 0,
-        price: 32.9,
+        price: 32.0,
         productDescription: "some description about product ",
         productImage: "asd",
         productName: "Kiwi",

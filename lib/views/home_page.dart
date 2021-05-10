@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_shopping/controllers/cart_controller.dart';
 import 'package:getx_shopping/controllers/product_controller.dart';
 
 class HomePage extends StatelessWidget {
   final HomeController _homeController = Get.put(HomeController());
+  final CartController _cartController = Get.put(CartController());
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +49,10 @@ class HomePage extends StatelessWidget {
                               ],
                             ),
                             ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                _cartController
+                                    .addToCart(controller.products[count]);
+                              },
                               style: ButtonStyle(
                                 backgroundColor:
                                     MaterialStateProperty.all(Colors.blue),
@@ -66,7 +71,15 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            Text("Total amount: "),
+            GetX<CartController>(builder: (controller) {
+              return Text(
+                "Total amount:  \$${controller.totalAmount}",
+                style: TextStyle(
+                  fontSize: 24.0,
+                  color: Colors.white,
+                ),
+              );
+            }),
             SizedBox(
               height: 100.0,
             ),
